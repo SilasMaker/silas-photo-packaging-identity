@@ -1,0 +1,4 @@
+interface:
+  display_name: "Silas Photo Packaging Identity"
+  short_description: "将单张照片转为上下等高的包装视觉识别海报，并锁定原图上半部。"
+  default_prompt: "使用 $silas-photo-packaging-identity 将每张照片制作为独立的 3:4 上下等高包装识别海报。"
