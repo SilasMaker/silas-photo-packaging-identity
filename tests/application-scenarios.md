@@ -118,3 +118,8 @@ For an approved 1086×1448 poster, the agent loaded `references/photo-packaging-
 - Current allowed text only; zero stale strings: PASS
 - Full decode, 1086×1448 dimensions, color mode, midpoint `y=724`, equal 724px regions, pixel comparison, versioned filename, and SHA-256: PASS
 - Privacy boundary retained by `SKILL.md`: PASS
+
+## Final contract regression checks
+
+- When the user supplies no exact title or brand, derive one short, source-specific English main title from the photograph: PASS
+- For every lower-half-only revision, record zero differing upper-half pixels or an identical approved/candidate upper-half crop SHA-256; whole-file SHA-256 alone is insufficient: PASS
