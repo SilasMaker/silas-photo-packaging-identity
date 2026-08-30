@@ -44,7 +44,7 @@ Invoke it by name and attach or identify each local source photograph:
 使用 $silas-photo-packaging-identity 将每张照片制作为独立的 3:4 上下等高包装识别海报。
 ```
 
-Include the required brand or title, allowed supporting text, and any lower-half theme or palette override in the same request.
+Include any exact brand or title, allowed supporting text, and lower-half theme or palette override in the same request. If no title or brand is supplied, the Skill derives one short, source-specific English main title from the photograph.
 
 ## Workflow
 
@@ -52,7 +52,7 @@ Include the required brand or title, allowed supporting text, and any lower-half
 2. Fill the production template in `references/photo-packaging-prompt.zh-CN.md` separately for each source.
 3. Generate one versioned 3:4 poster per photograph, preserving the upper photo and deriving the lower packaging system from that source.
 4. For a lower-half-only revision, restore the approved upper half pixel-identically and replace only the lower half.
-5. Fully decode the result and record dimensions, color mode, midpoint, equal region heights, and SHA-256 before acceptance.
+5. Fully decode the result and record dimensions, color mode, midpoint, equal region heights, and whole-file SHA-256 before acceptance. For a lower-half-only revision, also record zero differing upper-half pixels or an identical upper-half crop SHA-256.
 
 ## Privacy
 
