@@ -1,0 +1,38 @@
+# macOS
+.DS_Store
+.AppleDouble
+
+# Editors
+.idea/
+.vscode/
+*.swp
+*~
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+env/
+
+# Local environment and temporary files
+.env
+.env.*
+tmp/
+temp/
+*.tmp
+*.bak
+
+# Original or private inputs (generated PNG examples remain trackable)
+inputs/
+originals/
+source-images/
+private/
+IMG_*
+Screen Shot*
+Screenshot*
+截图*
+*.jpg
+*.jpeg
+*.heic
